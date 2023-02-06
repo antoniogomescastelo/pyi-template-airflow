@@ -1,0 +1,133 @@
+{
+    "ViewConfig": {
+        "displayStart": "0",
+        "displayLength": "1000",
+        "maxCountLimit": "-1",
+        "Resources": {
+            "Asset": {
+                "name": "Assets",
+                "Signifier": {
+                    "name": "FullName"
+                },
+                "DisplayName": {
+                    "name": "Name"
+                },
+                "Id": {
+                    "name": "Id"
+                },
+                "AssetType": {
+                    "name": "AssetType",
+                    "Signifier": {
+                        "name": "AssetTypeName"
+                    },
+                    "Id": {
+                        "name": "AssetTypeId"
+                    }
+                },
+                "Status": {
+                    "name": "AssetStatus",
+                    "Signifier": {
+                        "name": "AssetStatusName"
+                    },
+                    "Id": {
+                        "name": "AssetStatusId"
+                    }
+                },
+                "Domain": {
+                    "name": "AssetDomain",
+                    "Name": {
+                        "name": "AssetDomainName"
+                    },
+                    "Id": {
+                        "name": "AssetDomainId"
+                    },
+                    "DomainType": {
+                        "name": "AssetDomainType",
+                        "Signifier": {
+                            "name": "AssetDomainTypeName"
+                        },
+                        "Id": {
+                            "name": "AssetDomainTypeId"
+                        }
+                    },
+                    "Community": {
+                        "name": "AssetCommunity",
+                        "Name": {
+                            "name": "AssetCommunityName"
+                        },
+                        "Id": {
+                            "name": "AssetCommunityId"
+                        }
+                    }
+                },
+                "StringAttribute": [
+                    {
+                        "name": "Community",
+                        "labelId": "ad329459-11ad-496a-9ecc-c1bdba6ed8d6",
+                        "Id": { 
+                            "name": "CommunityAttributeId" 
+                        },
+                        "LongExpression": { 
+                            "name": "CommunityAttributeValue" 
+                        }
+                    },
+                    {
+                        "name": "SystemAsset",
+                        "labelId": "f9a70443-f22d-4548-83ab-0d1a649309fa",
+                        "Id": { 
+                            "name": "SystemAssetAttributeId" 
+                        },
+                        "LongExpression": { 
+                            "name": "SystemAssetAttributeValue" 
+                        }
+                    },
+                    {
+                        "name": "DagName",
+                        "labelId": "99b339fe-b510-4c3c-b149-fc8c4fc206f1",
+                        "Id": { 
+                            "name": "DagNameAttributeId" 
+                        },
+                        "LongExpression": { 
+                            "name": "DagNameAttributeValue" 
+                        }
+                    }
+                ],
+
+                "CreatedOn": {
+                    "name": "CreatedOn", 
+                    "hidden": false
+                },
+                "LastModified": {
+                    "name": "LastModified",
+                    "hidden": false
+                },
+                "Filter": {
+                    "AND": [
+                        {
+                            "Field": {
+                                "name": "AssetTypeId",
+                                "operator": "IN", 
+                                "values": ["52942a46-0e6a-456c-a289-ec04c850d114"] 
+                            }                                
+                        },
+                        {
+                            "Field": {
+                                "name": "AssetStatusId",
+                                "operator": "EQUALS",
+                                "value": "00000000-0000-0000-0000-000000005009"
+                            }
+                        }
+                    ]
+                },
+                "Order": [
+                    { 
+                        "Field": { 
+                            "name": "CreatedOn", 
+                            "order": "ASC" 
+                        }
+                    }    
+                ]               
+            }
+        }
+    }
+}
